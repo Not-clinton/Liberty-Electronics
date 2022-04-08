@@ -60,7 +60,7 @@ input[type=text]{
 
 .top{
     display: flex;
-    background-color: goldenrod;
+    background-color: rgb(193, 197, 0);
 }
 
 .cam{
@@ -68,13 +68,14 @@ input[type=text]{
     margin: 30px auto;
 }
 .body{
-    background-color:goldenrod;
+    background-color: rgb(193, 197, 0);
     padding: 20px;
 }
 
 .des{
     padding-top: 40px;
-    background-color: goldenrod;
+    background-color: rgb(242, 238, 47);
+    width: 1000px;
 }
 .content{
     display: flex;
@@ -156,7 +157,22 @@ input[type=text]{
     padding: 7px 30px 7px 30px;
     float: right;
 }
-
+.related{
+    border: 1px solid black;
+    width: 1800px;
+    height: 600px;
+}
+.row{
+    border: 1px solid black;
+    height: 300px;
+}
+.col-lg-6{
+    border: 1px solid black;
+    width:800px;
+    height:290px;
+    padding-right: 10px;
+    background-color: rgb(193, 197, 0);
+}
 
 .man {
     position: relative;

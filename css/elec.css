@@ -52,6 +52,7 @@ input[type=text]{
 .head{
     margin: 20px auto;
     margin-left: 40px;
+    padding-top: 50px;
 }
 
 .main{
@@ -64,7 +65,7 @@ input[type=text]{
 }
 
 .cam{
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     margin: 30px auto;
 }
 .body{
@@ -158,16 +159,25 @@ input[type=text]{
     float: right;
 }
 .related{
-    border: 1px solid black;
+  
     width: 1800px;
     height: 600px;
 }
 .row{
-    border: 1px solid black;
+    
     height: 300px;
 }
-.col-lg-6{
-    border: 1px solid black;
+.first-col{
+    display:flex; 
+    justify-content: space-between;
+    width:800px;
+    height:290px;
+    padding-right: 10px;
+    background-color: rgb(193, 197, 0);
+}
+.second.col{
+    display:flex; 
+    justify-content: space-between;
     width:800px;
     height:290px;
     padding-right: 10px;

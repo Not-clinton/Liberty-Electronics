@@ -157,21 +157,8 @@ input[type=text]{
     padding: 7px 30px 7px 30px;
     float: right;
 }
-.related{
-    border: 1px solid black;
-    width: 1800px;
-    height: 600px;
-}
-.row{
-    border: 1px solid black;
-    height: 300px;
-}
-.col-lg-6{
-    border: 1px solid black;
-    width:800px;
-    height:290px;
-    padding-right: 10px;
-    background-color: rgb(193, 197, 0);
+.pic{
+    height: 20px;
 }
 
 .man {

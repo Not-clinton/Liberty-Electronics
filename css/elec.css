@@ -52,6 +52,7 @@ input[type=text]{
 .head{
     margin: 20px auto;
     margin-left: 40px;
+    padding-top: 50px;
 }
 
 .main{
@@ -64,7 +65,7 @@ input[type=text]{
 }
 
 .cam{
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     margin: 30px auto;
 }
 .body{
@@ -157,8 +158,30 @@ input[type=text]{
     padding: 7px 30px 7px 30px;
     float: right;
 }
-.pic{
-    height: 20px;
+.related{
+  
+    width: 1800px;
+    height: 600px;
+}
+.row{
+    
+    height: 300px;
+}
+.first-col{
+    display:flex; 
+    justify-content: space-between;
+    width:800px;
+    height:290px;
+    padding-right: 10px;
+    background-color: rgb(193, 197, 0);
+}
+.second.col{
+    display:flex; 
+    justify-content: space-between;
+    width:800px;
+    height:290px;
+    padding-right: 10px;
+    background-color: rgb(193, 197, 0);
 }
 
 .man {

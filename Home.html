@@ -8,7 +8,71 @@
     <link rel="stylesheet" href="./css/elec.css">
     <link rel="stylesheet" href="//css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        .dropdown {
+          float: left;
+          overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+          cursor: pointer;
+          font-size: 16px;  
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+        
+        .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+          background-color: red;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+        
+        .show {
+          display: block;
+        }
+        </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm  navbar-dark">
@@ -36,7 +100,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/samsungproduct.html">Product</a>
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="myFunction()">Product
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="myDropdown">
+                          <a href="/samsungproduct.html">Samsung</a>
+                          <a href="/Sonyproduct.html">Sony</a>
+                        
+                        </div>
+                        </div> 
                 </li>
 
                 <li class="nav-item">
@@ -49,12 +122,12 @@
             </ul>
         </div>
     </nav>
-    <div class="main">
+    <div class="main" style="height:700px">
         <div class="head">
-            <img src="./images/phone 2.jpeg" alt="">
+            <img src="./images/phone 2.jpeg" alt="" width="600px">
         </div>
-        <div class="cam">
-            <img src="" alt="">
+        <div class="head">
+            <img src="/images/Cam.jpeg" alt="" style="height: 600px; width: 800px;" >
         </div>
     </div>
     <div class="spec">
@@ -76,7 +149,7 @@
             </div>
 
             <div>
-                <img src="" alt="">
+                <img src="/images/Car.jpeg" alt="">
                 <figcaption style="text-align: center; font-weight: bolder;">Car</figcaption>
             </div>
         </div>
@@ -169,7 +242,7 @@
                 <button>Buy now</button>
             </div>
             <div class="shop">
-                <img src="" alt="">
+                <img src="/images/tv.jpeg" alt="">
                 <figcaption style="padding: 15px 0px 0px 75px; font-weight: 600; line-height: 30px;">
                     name: Box access<br>
                     model: ILCE-7RM2<br>
@@ -204,5 +277,22 @@
           
         </div>
     </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+          if (!e.target.matches('.dropbtn')) {
+          var myDropdown = document.getElementById("myDropdown");
+            if (myDropdown.classList.contains('show')) {
+              myDropdown.classList.remove('show');
+            }
+          }
+        }
+        </script>
 </body>
 </html>
